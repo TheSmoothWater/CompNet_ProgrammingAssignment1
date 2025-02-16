@@ -96,9 +96,9 @@ def send_file(filename: str):
 
 if __name__ == "__main__":
     # get filename from cmd line
-    # if len(sys.argv) < 2:
-    #     print(f'SYNOPSIS: {sys.argv[0]} <filename>')
-    #     sys.exit(1)
-    # file_name = sys.argv[1]  # filename from cmdline argument
-    # send_file(file_name)
-    send_file('fileTransferProtocol.png')
+    if len(sys.argv) < 2:
+        print(f'SYNOPSIS: {sys.argv[0]} <filename>')
+        sys.exit(1)
+    file_name = sys.argv[1]  # filename from cmdline argument
+    send_file(file_name)
+    # send_file('fileTransferProtocol.png')
